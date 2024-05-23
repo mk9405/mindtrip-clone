@@ -1,0 +1,9 @@
+.buttonBody {
+  display: inline;
+  cursor: pointer;
+}
+
+.buttonBody :hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
