@@ -9,6 +9,10 @@ export default function Header() {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
+       
+      
+        
+
         // backgroundColor: "red",
       }}
     >

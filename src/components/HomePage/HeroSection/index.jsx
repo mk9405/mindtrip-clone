@@ -1,33 +1,15 @@
-import { useEffect, useState } from "react";
+
 import Header from "../../Header";
 import style from "./style.module.css";
+import { ReactTyped } from "react-typed";
 
 export default function HeroSection() {
-  const [state, setState] = useState("");
-
-  useEffect(() => {
-    const text = "differently";
-    let index = 0;
-
-    const intervalId = setInterval(() => {
-      if (index < text.length - 1) {
-        setState((prev) => prev + text[index]);
-        index++;
-      } else {
-        index = -1;
-        setState("");
-      }
-    }, 100);
-
-    return () => clearInterval(intervalId); // Cleanup function to clear interval on unmount
-  }, []);
-
   return (
     <div
       className="HeroSection"
       style={{
         backgroundImage: `url("https://mindtrip.ai/cdn-cgi/image/w=1920/https://images.mindtrip.ai/web/Heroes.jpg")`,
-        height: "98vh",
+        height: "110vh",
         backgroundSize: "cover",
         borderBottomLeftRadius: 25,
         borderBottomRightRadius: 25,
@@ -66,14 +48,24 @@ export default function HeroSection() {
           >
             <h1
               style={{
-                fontSize: "7.6rem",
+                fontSize: "8rem",
                 fontWeight: "bold",
-                marginTop: 0,
+                marginTop: 150,
                 marginBottom: 0,
               }}
             >
               Travel <br />
-              {state}
+              <ReactTyped 
+                strings={[
+                  "better.",
+                  "together.",
+                  "differently.",
+                ]}
+                typeSpeed={40}
+                backSpeed={50}
+                
+                loop
+              />
             </h1>
             <span
               style={{

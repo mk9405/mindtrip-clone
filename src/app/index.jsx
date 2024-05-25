@@ -1,5 +1,6 @@
 import HeroSection from "../components/HomePage/HeroSection";
 import { IoCarSportOutline } from "react-icons/io5";
+import style from './style.module.css'
 
 function HomePage() {
   return (
@@ -612,26 +613,34 @@ function HomePage() {
             </div>
           );
         })}
+
+        <h1
+          style={{
+            
+            fontSize: 60,
+            flexBasis: "100%",
+            textAlign: "center",
+            lineHeight: 1.25,
+          }}
+        >
+         Our adventure allies.
+        </h1>
+       <div style={{
+        padding: '4rem',
+        position: "relative",
+        margin: 'auto',
+        justifyContent: 'space-evenly',
+        display: 'flex',
+        
+
+       }} >
+          <img className={style.adv} width={200} height={50} src="https://mindtrip.ai/cdn-cgi/image/w=256/img/logo-priceline.svg" alt="" />
+          <img className={style.adv}  width={200} height={50}  src="https://mindtrip.ai/cdn-cgi/image/w=256/img/logo-tripadvisor.svg" alt="" />
+          <img className={style.adv}  width={150} height={50}  src="https://mindtrip.ai/cdn-cgi/image/w=256/img/logo-google.svg" alt="" />
+          <img className={style.adv}  width={190} height={40}  src="https://mindtrip.ai/cdn-cgi/image/w=256/img/logo-viator.svg" alt="" />
+       </div>
       </div>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
   );
 }

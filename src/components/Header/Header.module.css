@@ -1,5 +1,7 @@
 .header {
   padding: 12px 18px;
-  position: sticky;
+  position: fixed;
+  width: 95%;
+  backdrop-filter: blur(10px);
   top: 0px;
 }
